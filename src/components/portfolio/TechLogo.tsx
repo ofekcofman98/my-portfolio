@@ -23,9 +23,18 @@ export const TechLogo = ({ name }: TechLogoProps) => {
     "RabbitMQ": { icon: "rabbitmq", color: "#FF6600" },
     "Kafka": { icon: "apachekafka", color: "#ffffff" },
     "React": { icon: "react", color: "#61DAFB" },
-    "TypeScript": { icon: "typescript", color: "#3178C6" },
+    "Typescript": { icon: "typescript", color: "#3178C6" },
     "HTML": { icon: "html5", color: "#E34F26" },
     "Unity": { icon: "unity", color: "#ffffff" },
+    "Javascript": { icon: "javascript", color: "#F7DF1E" },
+    "Node.js": { icon: "nodedotjs", color: "#339933" },
+    "Next.js": { icon: "nextdotjs", color: "#ffffff" },
+    "CSS": { icon: "css3", color: "#1572B6" },
+    "LLM APIs": { icon: "claude", color: "#ff7043" },
+    "AI Workflows": { icon: "cursor", color: "#ffffff" },
+    "Prompt Engineering": { icon: "googlegemini", color: "#ffffff" },
+    "OpenAI": { icon: "openai", color: "#ffffff" },
+    "API": { icon: "fastapi", color: "#009688" },
   };
 
   const tech = logoMap[name] || { icon: "github", color: "#ffffff" };

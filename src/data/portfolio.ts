@@ -1,14 +1,28 @@
-import { TechStackCategory, Project, Experience, AnimationVariants } from "@/src/types/portfolio";
+import { TechStackCategory, Project, Experience, Education, AnimationVariants } from "@/src/types/portfolio";
 
 export const techStackByCategory: TechStackCategory = {
   Languages: [
+    { name: "Typescript", icon: "Typescript" },
+    { name: "Javascript", icon: "Javascript" },
     { name: "C#", icon: "C#" },
-    { name: "Python", icon: "Python" },
-    { name: "SQL", icon: "SQL" },
+    { name: "Python", icon: "Python" }
+  ],
+  Frontend: [
+    { name: "React", icon: "React" },
+    { name: "Next.js", icon: "Next.js" },
+    { name: "HTML", icon: "HTML" },
+    { name: "CSS", icon: "CSS" },
   ],
   Backend: [
-    { name: "ASP.NET Core", icon: "ASP.NET Core" },
-    { name: "FastAPI", icon: "FastAPI" },
+    { name: "Node.js", icon: "Node.js" },
+    { name: "REST APIs", icon: "API" },
+    { name: "ASP.NET Core", icon: "ASP.NET Core" }
+  ],
+  AI: [
+    { name: "LLM APIs", icon: "LLM APIs" },
+    { name: "OpenAI", icon: "OpenAI" },
+    { name: "AI Workflows", icon: "AI Workflows" },
+    { name: "Prompt Engineering", icon: "Prompt Engineering" }
   ],
   Database: [
     { name: "PostgreSQL", icon: "PostgreSQL" },
@@ -19,25 +33,32 @@ export const techStackByCategory: TechStackCategory = {
     { name: "Kafka", icon: "Kafka" },
   ],
 
-  Frontend: [
-    { name: "React", icon: "React" },
-    { name: "TypeScript", icon: "TypeScript" },
-    { name: "HTML", icon: "HTML" },
-  ],
-  Cloud: [
+  Cloud : [
     { name: "GCP", icon: "GCP" },
     { name: "Supabase", icon: "Supabase" },
-  ],
-  DevOps: [
     { name: "Docker", icon: "Docker" },
     { name: "Git", icon: "Git" },
-  ],
-  Others: [
-    { name: "Unity", icon: "Unity" },
-  ],
+  ]
 };
 
 export const projects: Project[] = [
+  {
+    title: "VocalGrid",
+    description: "AI-powered voice-first data entry platform",
+    bullets: [
+      "Built a full-stack AI application that transforms spoken input into structured table data.",
+      "Integrated Speech-to-Text, LLM APIs, validation workflows, and database actions.",
+      "Designed a responsive React/Next.js interface with real-time feedback and editing capabilities.",
+    ],
+    tech: [
+      "TypeScript",
+      "Next.js",
+      "React",
+      "Supabase",
+      "OpenAI"
+    ],
+    github: "https://github.com/ofekcofman98/v-and-x-project",
+  },
   {
     title: "SQL Detective",
     description: "Cross-Platform Client-Server Software System with ASP.NET Core and Unity",
@@ -78,6 +99,22 @@ export const projects: Project[] = [
     githubFrontend: "https://github.com/ofekcofman98/tb2-leads-frontend",
     demo: null,
   },
+];
+
+export const education: Education[] = [
+  {
+    degree: "Bachelor's Degree in Computer Science",
+    institution: "The Academic College of Tel-Aviv, Yaffo",
+    period: "2022 - 2025",
+    description: "Relevant Coursework: Data Structures, Algorithms, C#, Design Patterns, Machine Learning, Event-Driven Architecture",
+  },
+  {
+    degree: "Jumpstart Tech Training Program",
+    institution: "Wix",
+    period: "2026",
+    description: "Hands-on training program covering modern web development topics including: AI agent workflows, React component architecture, async JavaScript, API integration, state management, CI/CD and deployment.",
+  },
+
 ];
 
 export const experience: Experience[] = [

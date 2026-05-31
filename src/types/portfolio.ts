@@ -29,6 +29,13 @@ export interface Experience {
   bullets: string[];
 }
 
+export interface Education {
+  degree: string;
+  institution: string;
+  period: string;
+  description: string;
+}
+
 import { Variants } from "framer-motion";
 
 export type AnimationVariants = Variants;

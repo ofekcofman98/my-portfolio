@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { GraduationCap } from "lucide-react";
-import { fadeInUp, staggerContainer } from "@/src/data/portfolio";
+import { education, fadeInUp, staggerContainer } from "@/src/data/portfolio";
 
 export const Education = () => {
   return (
@@ -21,23 +21,26 @@ export const Education = () => {
             Education
           </motion.h2>
           
-          <motion.div
-            variants={fadeInUp}
-            className="relative pl-8 border-l-2 border-[#3a3f44]"
-          >
-            <div className="absolute -left-2 top-0 w-4 h-4 bg-white rounded-full border-2 border-[#0f1419]"></div>
-            <div className="flex items-start gap-4">
-              <GraduationCap className="w-5 h-5 text-gray-500 mt-1" />
-              <div>
-                <h3 className="text-xl font-bold">Bachelor's Degree in Computer Science</h3>
-                <p className="text-gray-400">The Academic College of Tel-Aviv, Yaffo</p>
-                <p className="text-sm text-gray-500">2022 - 2025</p>
-                <p className="text-sm text-gray-500 mt-2">
-                  Relevant Coursework: Data Structures, Algorithms, C#, Design Patterns, Machine Learning, Event-Driven Architecture
-                </p>
-              </div>
-            </div>
-          </motion.div>
+          <div className="space-y-8">
+            {education.map((edu, index) => (
+              <motion.div
+                key={index}
+                variants={fadeInUp}
+                className="relative pl-8 border-l-2 border-[#3a3f44]"
+              >
+                <div className="absolute -left-2 top-0 w-4 h-4 bg-white rounded-full border-2 border-[#0f1419]"></div>
+                <div className="flex items-start gap-4 mb-2">
+                  <GraduationCap className="w-5 h-5 text-gray-500 mt-1" />
+                  <div>
+                    <h3 className="text-xl font-bold">{edu.degree}</h3>
+                    <p className="text-gray-400">{edu.institution}</p>
+                    <p className="text-sm text-gray-500">{edu.period}</p>
+                  </div>
+                </div>
+                <p className="text-gray-400 ml-9 mt-2">{edu.description}</p>
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>

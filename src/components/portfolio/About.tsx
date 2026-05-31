@@ -24,10 +24,13 @@ export const About = () => {
             className="text-lg text-gray-400 leading-relaxed space-y-4"
           >
             <p>
-              I'm a Software Developer and former Team Leader in Unit 8200, with hands-on experience designing, building, and owning complex software systems from design to production. I specialize in .NET, C#, and RESTful APIs, with a strong foundation in software engineering principles, distributed systems, and async processing.
+            I'm a Full-Stack & AI Developer passionate about turning complex workflows into simple products.
             </p>
             <p>
-              My expertise spans backend services, data-intensive pipelines, and cloud-integrated applications. I've led technical teams in deploying mission-critical systems and have a proven track record of delivering scalable solutions that drive real impact.
+            I build end-to-end applications across frontend, backend, and data layers, with a focus on AI-powered workflows, LLM integrations, and real-time web applications.
+            </p>
+            <p>
+            Former Team Lead in Unit 8200, bringing ownership, problem-solving, and fast learning into every project.
             </p>
           </motion.div>
         </motion.div>

@@ -56,7 +56,7 @@ export const Hero = ({ onDownloadCV }: HeroProps) => {
           variants={fadeInUp}
           className="text-lg text-gray-500 mb-12 max-w-2xl mx-auto"
         >
-          Building complex software systems from design to production with .NET, C#, Python, TypeScript, and distributed architectures
+          Turning complex workflows into simple products through software and AI.
         </motion.p>
         <motion.div
           variants={fadeInUp}
